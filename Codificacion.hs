@@ -34,6 +34,8 @@ longitudes xss = map length xss
 -- Función une tal que (une xss) es la lista obtenida uniendo los elementos de xss.
 une :: [[a]] -> [a]
 -- Aquí va tu código.
+une xss = concat xss
+--Concat es una funcion de haskell que permite unir en un string los elementos de una cadena
 
 -- Función reagrupa tal que (reagrupa xs) es la lista obtenida agrupando los elementos de xs de 4 en
 -- 4.
