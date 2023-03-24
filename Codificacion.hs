@@ -11,6 +11,11 @@ divide p xs = (ys, zs)
   where
     ys = takeWhile p xs
     zs = dropWhile p xs
+--TakeWhile es una funcion de haskell que devuelve los elementos de 'xs' que cumplen la condición de 'p' hasta que encuentre un elemento que no cumpla con la condición de 'p'
+
+--DropWhile es una funcion de haskell que elimina los elementos de 'xs' que cumplan con la condicion de 'p' hasta que encuentre un elemento que no cumpla con la condición de 'p'
+
+----------------------------------------------------------
 -- Función palabras tal que (palabras cs) es la lista de palabras contenidas en la cadena cs.
 palabras :: String -> [String]
 -- Aquí va tu código.
