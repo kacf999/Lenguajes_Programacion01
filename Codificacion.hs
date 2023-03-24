@@ -5,6 +5,7 @@ module Codificacion where
 
 -- Función divide tal que (divide p xs) es el par (ys,zs) donde ys es el mayor prefijo de xs cuyos
 -- elementos cumplen p y zs es la lista de los elementos restantes de xs.
+--recibe una condición y una cadena, regresa una tupla
 divide :: (a -> Bool) -> [a] -> ([a],[a])
 -- Aquí va tu código.
 divide p xs = (ys, zs)
@@ -19,7 +20,10 @@ divide p xs = (ys, zs)
 -- Función palabras tal que (palabras cs) es la lista de palabras contenidas en la cadena cs.
 palabras :: String -> [String]
 -- Aquí va tu código.
-palabras a = [a]
+palabras cs = words cs
+--words es una funcion de haskell que separa palabras de una cadena cuando detecta un espacio o una tabulación
+-- la cadena se debe introducir entre " "
+
 -- Función longitudes tal que (longitudes xss) es la lista de las longitudes de los elementos xss.
 longitudes :: [[a]] -> [Int]
 -- Aquí va tu código.
@@ -47,6 +51,6 @@ agrupa :: [a] -> [Int] -> [[a]]
 frase :: [String] -> String
 -- Aquí va tu código.
 
--- Función vlave que realiza el proceso de codificación completo.
+-- Función clave que realiza el proceso de codificación completo.
 clave :: String -> String
 -- Aquí va tu código.
