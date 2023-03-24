@@ -27,6 +27,9 @@ palabras cs = words cs
 -- Función longitudes tal que (longitudes xss) es la lista de las longitudes de los elementos xss.
 longitudes :: [[a]] -> [Int]
 -- Aquí va tu código.
+longitudes xss = map length xss
+--map aplica la misma funcion a todos los elementos de la cadena
+--length regresa el tamaño de la cadena 
 
 -- Función une tal que (une xss) es la lista obtenida uniendo los elementos de xss.
 une :: [[a]] -> [a]
