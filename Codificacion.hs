@@ -45,6 +45,7 @@ reagrupa :: [a] -> [[a]]
 -- Función inversas tal que (inversas xss) es la lista obtenida invirtiendo los elementos de xss.
 inversas :: [[a]] -> [[a]]
 -- Aquí va tu código.
+inversas xss = map reverse xss
 
 -- Función agrupa tal que (agrupa xs ns) es la lista obtenida agrupando los elementos de xs según
 -- las longitudes indicadas en ns.
