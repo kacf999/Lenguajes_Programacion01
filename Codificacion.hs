@@ -7,11 +7,14 @@ module Codificacion where
 -- elementos cumplen p y zs es la lista de los elementos restantes de xs.
 divide :: (a -> Bool) -> [a] -> ([a],[a])
 -- Aquí va tu código.
-
+divide p xs = (ys, zs)
+  where
+    ys = takeWhile p xs
+    zs = dropWhile p xs
 -- Función palabras tal que (palabras cs) es la lista de palabras contenidas en la cadena cs.
 palabras :: String -> [String]
 -- Aquí va tu código.
-
+palabras a = [a]
 -- Función longitudes tal que (longitudes xss) es la lista de las longitudes de los elementos xss.
 longitudes :: [[a]] -> [Int]
 -- Aquí va tu código.
