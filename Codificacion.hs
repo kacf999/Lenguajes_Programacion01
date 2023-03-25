@@ -41,21 +41,33 @@ une xss = concat xss
 -- 4.
 reagrupa :: [a] -> [[a]]
 -- Aquí va tu código.
+reagrupa [] = []
+reagrupa xs = take 4 xs : reagrupa (drop 4 xs)
+--Se usa recursion para dividir los elementos de la lista
+--Take es una funcion de haskell que nos permite tomar los 4 elementos de la lista
+--Drop es una funcion de haskell que nos permite eliminar los primeros 4 elementos de la lista
 
 -- Función inversas tal que (inversas xss) es la lista obtenida invirtiendo los elementos de xss.
 inversas :: [[a]] -> [[a]]
 -- Aquí va tu código.
 inversas xss = map reverse xss
+-- Reverse es una funcion de haskell que permite invertir los elementos de una lista
 
 -- Función agrupa tal que (agrupa xs ns) es la lista obtenida agrupando los elementos de xs según
 -- las longitudes indicadas en ns.
 agrupa :: [a] -> [Int] -> [[a]]
 -- Aquí va tu código.
+agrupa sx [] = []
+agrupa xs (n:ns) = take n sx : agrupa (drop n sx) ns
 
 -- Función frase tal que (frase xs) es la frase obtenida de las palabras de xs dejando un espacio en
 -- blanco entre ellas.
 frase :: [String] -> String
 -- Aquí va tu código.
+frase [] = ""
+frase [x] = x
+frase (x:xs) = x ++ " " ++ frase xs
+--El operador ++ nos permite concatenar los elementos de la cadena, con " " dejamos un especio en blanco
 
 -- Función clave que realiza el proceso de codificación completo.
 clave :: String -> String
