@@ -58,7 +58,7 @@ inversas xss = map reverse xss
 agrupa :: [a] -> [Int] -> [[a]]
 -- Aquí va tu código.
 agrupa sx [] = []
-agrupa xs (n:ns) = take n sx : agrupa (drop n sx) ns
+agrupa xs (n:ns) = take n xs : agrupa (drop n xs) ns
 
 -- Función frase tal que (frase xs) es la frase obtenida de las palabras de xs dejando un espacio en
 -- blanco entre ellas.
@@ -72,3 +72,4 @@ frase (x:xs) = x ++ " " ++ frase xs
 -- Función clave que realiza el proceso de codificación completo.
 clave :: String -> String
 -- Aquí va tu código.
+clave xs = reverse xs
