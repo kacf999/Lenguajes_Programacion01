@@ -4,5 +4,6 @@
             # Put your dependencies here!
         ]))
         pkgs.haskell-language-server
+        pkgs.cabal-install
     ];
 }

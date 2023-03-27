@@ -105,11 +105,11 @@ run = do putStr "Prueba 1:  "
          quickCheck prueba24
          putStr "Prueba 25: "
          quickCheck prueba25
-         putStr "Prueba 22: "
+         putStr "Prueba 26: "
          quickCheck prueba26
-         putStr "Prueba 22: "
+         putStr "Prueba 27: "
          quickCheck prueba27
-         putStr "Prueba 22: "
+         putStr "Prueba 28: "
          quickCheck prueba28
          putStr "\nCalificación: "
          putStr ((show calificacion) ++ "\n")

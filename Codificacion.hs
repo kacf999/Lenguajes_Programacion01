@@ -69,7 +69,7 @@ frase [x] = x
 frase (x:xs) = x ++ " " ++ frase xs
 --El operador ++ nos permite concatenar los elementos de la cadena, con " " dejamos un especio en blanco
 
--- Función clave que realiza el proceso de codificación completo.
+
+-- Función vlave que realiza el proceso de codificación completo.
 clave :: String -> String
--- Aquí va tu código.
-clave xs = reverse xs
+clave x = frase(agrupa (une (inversas(reagrupa (une (palabras x))))) (reverse (longitudes (palabras x))))
